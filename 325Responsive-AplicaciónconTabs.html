@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>3.2.5 Responsive: Aplicación con Tabs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2> </h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Nuevo Usuario</a></li>
+    <li><a data-toggle="tab" href="#menu1">Consulta Usuarios</a></li>
+    <li><a data-toggle="tab" href="#menu2">Nuevo artículo</a></li>
+    <li><a data-toggle="tab" href="#menu3">Consulta artículos</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Usuario</h3>
+
+        <form class="form-horizontal">
+          <div class="form-group">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div>
+                <label for="inputNombre" class="control-label">Nombre</label>
+                <input type="text" class="form-control" id="inputNombre">
+              </div>
+              <div>&nbsp;</div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div>
+                <label for="inputPassword" class="control-label">Contraseña</label>
+                <input type="text" class="form-control" id="inputPassword">
+              </div>
+              <div>&nbsp;</div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div>
+                <label for="inputEdad" class="control-label">Edad</label>
+                <input type="number" class="form-control" id="inputEdad" min="18" max="99" step="1"  required>
+              </div>
+              <div>&nbsp;</div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div>
+                <label for="inputEmail" class="control-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="inputEmail" required="required">
+              </div>
+            <div>&nbsp;</div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <button type="submit" class="btn btn-success navbar-right">Guardar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Consulta Usuarios</h3>
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Contraseña</th>
+              <th>Edad</th>
+              <th>Correo Electrónico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>iarjona</td>
+              <td>abcd1234*</td>
+              <td>32</td>
+              <td>iarjona@gmail.com</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>kmareno</td>
+              <td>dadada5655_33</td>
+              <td>24</td>
+              <td>kmareno@gmail.com</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>epacheco</td>
+              <td>pa12pa23</td>
+              <td>23</td>
+              <td>epacheco@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Artículo</h3>
+        <form class="form-horizontal">
+          <div class="form-group">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div>
+                <label for="inputNombre" class="control-label">Nombre</label>
+                <input type="text" class="form-control" id="inputNombre">
+              </div>
+              <div>&nbsp;</div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div>
+                <label for="inputDescripcion" class="control-label">Descripción</label>
+                <input type="text" class="form-control" id="inputDescripcion">
+              </div>
+              <div>&nbsp;</div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <button type="submit" class="btn btn-success navbar-right">Guardar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+    </div>
+        <div id="menu3" class="tab-pane fade">
+      <h3>Consulta artículos</h3>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Macbook Air</td>
+            <td>13 pulgadas, 8RAM, 128SSD</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>HP ProBook 450</td>
+            <td>8 RAM, 1TB HDD, Intel Core i5</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>ASUS X555DG-XO91T</td>
+            <td>256 SSD, Intel Core i5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
